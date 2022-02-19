@@ -1,1 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="index.css"><title>Document</title></head><body><div class="burger-menu" id="burger-menu"><p class="menu-title">Навигация по сайту</p><ul class="menu"><a href="index.html"><li class="menu-el">Главная</li></a><a href="about_page.html"><li class="menu-el">О компании</li></a><a href="#"><li class="menu-el">Menu element</li></a><a href="#"><li class="menu-el">Menu element</li></a><a href="#"><li class="menu-el">Menu element</li></a></ul></div><div class="main-space add-bg-color container"><div class="nav"><div class="logo">FrontLab.</div><div class="menu-btn" id="burger-btn" onclick="burgerMenu()"><img src="img/icons/menu-1.svg" alt=""></div></div></div><div class="history section"><p class="block-title">Немного о нашей компании</p><p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p><p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p><p class="block-title">Наша команда</p><div class="team block"><div class="person p1"><div class="person-avatar"><img src="img/avatar-1.svg" alt=""></div><div class="person-info"><p class="person-title">Вячеслав Дёмин</p><div><span class="person-skill cyan">frontend dev</span></div><p class="person-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur provident reprehenderit corporis omnis beatae, amet accusamus aliquid enim esse optio praesentium debitis. Inventore ratione tempore magni amet numquam. Dolores.</p></div></div><div class="person p2"><div class="person-avatar"><img src="img/avatar-2.svg" alt=""></div><div class="person-info"><p class="person-title">Ольга Серова</p><div><span class="person-skill purple">designer</span></div><p class="person-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur provident reprehenderit corporis omnis beatae, amet accusamus aliquid enim esse optio praesentium debitis. Inventore ratione tempore magni amet numquam. Dolores.</p></div></div><div class="person p3"><div class="person-avatar"><img src="img/avatar-3.svg" alt=""></div><div class="person-info"><p class="person-title">Олег Дядечко</p><div><span class="person-skill green">JavaScript dev</span></div><p class="person-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur provident reprehenderit corporis omnis beatae, amet accusamus aliquid enim esse optio praesentium debitis. Inventore ratione tempore magni amet numquam. Dolores.</p></div></div><div class="person p4"><div class="person-avatar"><img src="img/avatar-4.svg" alt=""></div><div class="person-info"><p class="person-title">Алина Иванченко</p><div><span class="person-skill red">SMM manager</span></div><p class="person-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur provident reprehenderit corporis omnis beatae, amet accusamus aliquid enim esse optio praesentium debitis. Inventore ratione tempore magni amet numquam. Dolores.</p></div></div></div><div class="nowdays block"><p class="block-title">Настоящее время</p></div></div><script src="js/burger.js"></script><script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script><script src="js/scrollreveal.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/icons/favicon.png">
+    <title>FrontLab</title>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <p class="sidebar-title">Навигация по сайту</p>
+    <ul class="sidebar-list">
+        <a href="index.html"><li class="sidebar-el">Главная</li></a>
+        <a href="about_page.html"><li class="sidebar-el">О компании</li></a>
+        <a href="#"><li class="sidebar-el">Menu element</li></a>
+        <a href="#"><li class="sidebar-el">Menu element</li></a>
+        <a href="#"><li class="sidebar-el">Menu element</li></a>
+    </ul>
+</div>
+<div class="main-space add-bg2">
+    <div class="nav">
+    <div class="logo">
+        FrontLab.
+    </div>
+    <div class="sidebar-btn" id="sidebar-btn" onclick="sidebar()">
+        <img src="img/icons/menu-1.svg" alt="">
+    </div>
+</div>
+    <div class="popup" id="popup">
+    <div class="close-popup-btn" id="close-popup-btn" onclick="closePopup()">
+        <img src="img/icons/cancel.svg" alt="">
+    </div>
+    <p class="popup-title">Нам важно ваше мнение</p>
+    <p class="popup-message">Интересна ли вам тема web разработки? Хотели бы вы попробовать себя в этой сфере и развиваться?</p>
+    <div class="popup-buttons">
+        <button class="popup-btn" id="popup-yes" onclick="popupYesBtn()">Да</button>
+        <button class="popup-btn" id="popup-no" onclick="popupNoBtn()">Нет</button>
+    </div>
+</div>
+</div>
+    <div class="history section">
+        <p class="block-title">Немного о нашей компании</p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p>
+        <p class="block-title">Наша команда</p>
+        <div class="team block">
+           <div class="member" id="frontenddev">
+               <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-1.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Вячеслав Дёмин</p>
+                        <p class="member-skill">frontend разработчик</p>
+                    </div>
+               </div>
+               <div class="member-description">
+                Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+               </div>
+           </div>
+           <div class="member" id="javascriptdev">
+            <div class="member-head">
+                 <div class="avatar">
+                     <img src="img/avatar-3.svg" alt="">
+                 </div>
+                 <div class="name-and-skill">
+                     <p class="member-name">Олег Дядечко</p>
+                     <p class="member-skill">JavaScript разработчик</p>
+                 </div>
+            </div>
+            <div class="member-description">
+             Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+            </div>
+           </div>
+           <div class="member" id="webdesigner">
+                <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-4.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Алина Иванченко</p>
+                        <p class="member-skill">web дизайнер</p>
+                    </div>
+                </div>
+                <div class="member-description">
+                Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+                </div>
+           </div>
+           <div class="member" id="smm">
+            <div class="member-head">
+                <div class="avatar">
+                    <img src="img/avatar-2.svg" alt="">
+                </div>
+                <div class="name-and-skill">
+                    <p class="member-name">Ксения Серова</p>
+                    <p class="member-skill">SMM менеджер</p>
+                </div>
+            </div>
+            <div class="member-description">
+            Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+            </div>
+       </div>
+        </div>
+        <div class="nowdays block">
+            <p class="block-title">Настоящее время</p>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+<script src="js/burger.js"></script>
+<script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/scrollreveal.js"></script>
+</body>
+</html>

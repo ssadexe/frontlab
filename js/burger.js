@@ -1,6 +1,6 @@
-let burgerBtn = document.getElementById('burger-btn');
+let burgerBtn = document.getElementById('sidebar-btn');
 
-burgerBtn.onclick = function burgerMenu() {
-    document.getElementById('burger-menu').classList.toggle('burger-menu-anim');
-    document.getElementById('burger-btn').classList.toggle('burger-btn-anim');
+burgerBtn.onclick = function sidebar() {
+    document.getElementById('sidebar').classList.toggle('sidebar-anim');
+    document.getElementById('sidebar-btn').classList.toggle('sidebar-btn-anim');
 }
