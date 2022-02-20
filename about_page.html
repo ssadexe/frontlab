@@ -42,8 +42,10 @@
 </div>
     <div class="history section">
         <p class="block-title">Немного о нашей компании</p>
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p>
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia reprehenderit ullam recusandae similique voluptas maiores atque ipsum modi impedit sint ea, illum, quibusdam porro illo aperiam. Adipisci aliquid quo sit.</p>
+        <div class="text-block" id="abouttext">
+            <p class="text">FrontLab берет своя начало из далекого 2016 года, когда web разработка только набирала обороты. Наш главный разработчик в то время только начинал изучать азы frontend'a. Медленно, но уверенно шагая к большой цели.</p>
+            <p class="text">Со временем появилась команда, которых объединяют общие интересы и цели. Каждый из нас знает свою роль в этом сложном механизме и делает все, чтобы он работал безотказно.</p>
+        </div>
         <p class="block-title">Наша команда</p>
         <div class="team block">
            <div class="member" id="frontenddev">
@@ -71,7 +73,7 @@
                     </div>
                 </div>
                 <div class="member-description">
-                    Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+                    Занимается програмной составляющей веб страниц и сайтов. Работает с библиотеками и пакетами. Добавляет динамичность и фунционал на сайт.
                 </div>
             </div>
             <div class="member" id="webdesigner">
@@ -85,7 +87,7 @@
                     </div>
                 </div>
                 <div class="member-description">
-                    Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+                    Занимается разработкой макетов веб страниц. От её работы зависят последующие этапы разработки. Макет должен соответсовать многим требованиям как заказчика, так и разработки в целом.
                 </div>
             </div>
             <div class="member" id="smm">
@@ -99,16 +101,67 @@
                     </div>
                 </div>
                 <div class="member-description">
-                Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+                Занимается прдвижением сайтов после их запуска в интернет. Анализирует входящий и исходящий трафик. Помогает наполнить сайт необходимым контентом, который сможет помочь сайту занять необходимое место  в глобальном поиске.
                 </div>
             </div>
-            <div class="nowdays block">
-                <p class="block-title">Настоящее время</p>
+        </div>
+        <div class="nowdays block">
+            <p class="block-title">Наша работа</p>
+            <p class="text">На данный момент <span class="bold">FrontLab</span> занимается созданием проектов любой сложности. От простых лендингов, до сложных многостраничных сайтов и веб приложений. Наша команда знает своё дело. Каждый заказчик принимает как ксовенное, так и прямое  участие в работе, и может следить за всеми этапами разработки на <span class="bold">GitHub</span>. Работая с нами вы получите не только готовый проект, но и много положительных эмоций.</p>
+            <div class="image">
+                <img src="img/github_example.png" alt="" id="github_example">
+                <p class="img-description">Система контроля версий "GitHub".</p>
+            </div>
+            <div class="soft-block">
+                <p class="text"><span class="bold">GitHub</span> — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.
+                <br><br>
+                Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им все возможности (включая SSL), а для крупных корпоративных проектов предлагаются различные платные тарифные планы.</p>
+                <p class="block-title">Средства разработки</p>
+                <p class="text">В своей работе мы используем самые современные и доступные технологии. Сфера web разработки развивается с огромной скоростью, поэтому мы стараемся не отставать.</p>
+                <div class="soft">
+                    <div class="soft-card" id="softcardHtml">
+                        <div class="soft-card-avatar">
+                            <img src="img/icons/html.svg" alt="">
+                        </div>
+                        <div class="soft-card-info">
+                            <p class="soft-card-name">HTML 5</p>
+                            <p class="soft-card-description">Последний стабильный релиз HTML, HTML5 преобразовывает HTML из простого языка для разметки документа в платформу для разработки полноценных приложений.</p>
+                        </div>
+                    </div>
+                    <div class="soft-card" id="softcardSass">
+                        <div class="soft-card-avatar">
+                            <img src="img/icons/sass.svg" alt="">
+                        </div>
+                        <div class="soft-card-info">
+                            <p class="soft-card-name">Препроцессор SASS</p>
+                            <p class="soft-card-description">Sass — это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.</p>
+                        </div>
+                    </div>
+                    <div class="soft-card" id="softcardJs">
+                        <div class="soft-card-avatar">
+                            <img src="img/icons/js.svg" alt="">
+                        </div>
+                        <div class="soft-card-info">
+                            <p class="soft-card-name">JavaScript</p>
+                            <p class="soft-card-description">Язык програмирования. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.</p>
+                        </div>
+                    </div>
+                    <div class="soft-card" id="softcardNPM">
+                        <div class="soft-card-avatar">
+                            <img src="img/icons/npm.svg" alt="">
+                        </div>
+                        <div class="soft-card-info">
+                            <p class="soft-card-name">NPM</p>
+                            <p class="soft-card-description">npm – это менеджер пакетов, который входит в состав Node.js. Используется разработчиками JavaScript для установки различных модулей.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
 <script src="js/main.js"></script>
-<script src="js/burger.js"></script>
+<script src="js/sidebar.js"></script>
 <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="js/scrollreveal.js"></script>
 </body>
