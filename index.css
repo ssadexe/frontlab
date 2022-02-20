@@ -5057,11 +5057,7 @@
 html {
   font-family: "Montserrat";
   font-size: 14px;
-  background-color: #eaf1f5;
-}
-
-.add-bg2 {
-  background-color: #eaf1f5;
+  background-color: #0e0e0e;
 }
 
 .section {
@@ -5093,11 +5089,6 @@ span.bold {
   font-weight: 700;
 }
 
-span.accent {
-  padding: 0 0.7rem;
-  background-color: #a1f1ff;
-}
-
 .sidebar {
   position: absolute;
   width: 75vw;
@@ -5121,7 +5112,7 @@ span.accent {
 
 .sidebar-list a {
   text-decoration: none;
-  color: #fff;
+  color: #eaf1f5;
 }
 
 .sidebar-el {
@@ -5149,6 +5140,7 @@ span.accent {
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
+  color: #fff;
 }
 
 .sidebar-btn {
@@ -5159,7 +5151,7 @@ span.accent {
   padding: 10px 10px;
   border-radius: 0.8rem;
   transition: 0.4s ease-out;
-  background-color: #fff;
+  background-color: #eaf1f5;
   box-shadow: 0px 0px 26.9px rgba(0, 0, 0, 0.03), 0px 0px 215px rgba(0, 0, 0, 0.06);
 }
 .sidebar-btn img {
@@ -5173,30 +5165,36 @@ span.accent {
   transition: 0.4s ease-in;
 }
 
-.header {
-  height: 100%;
+.promo {
   margin-top: 4vh;
   padding: 0 1rem;
 }
 
-.header-info {
+.promo-info {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
   color: #9c9c9c;
 }
-.header-info img {
+.promo-info img {
   margin-right: 0.5rem;
   width: 20px;
   height: 20px;
 }
 
-.header-title {
+.promo-title {
   margin-top: 1rem;
   font-size: 3rem;
+  color: #fff;
 }
 
-.header-subtitle {
+span.accent {
+  padding: 0 0.7rem;
+  color: #fff;
+  background-color: #4882ff;
+}
+
+.promo-subtitle {
   margin-top: 1rem;
   font-size: 1.4rem;
   color: #9c9c9c;
@@ -5219,7 +5217,7 @@ span.accent {
 .st-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #000;
+  color: #fff;
 }
 
 .st-description {
@@ -5236,8 +5234,8 @@ span.accent {
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 700;
-  color: #000;
-  background-color: #a1f1ff;
+  color: #fff;
+  background-color: #4882ff;
 }
 
 #right-arrow {
@@ -5249,13 +5247,9 @@ span.accent {
     width: 50%;
   }
 }
-.body {
-  background-color: #eaf1f5;
-}
-
 .history {
-  margin-top: 2rem;
-  background-color: #fff;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #eaf1f5;
 }
 
 .team {
@@ -5306,9 +5300,11 @@ span.accent {
 }
 .popup {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  background-color: #fff;
+  color: #fff;
+  background-color: #4882ff;
   box-shadow: 0px 0px 26.9px rgba(0, 0, 0, 0.03), 0px 0px 215px rgba(0, 0, 0, 0.06);
 }
 
@@ -5316,6 +5312,7 @@ span.accent {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  color: #000;
 }
 .close-popup-btn img {
   width: 25px;
@@ -5345,10 +5342,12 @@ span.accent {
   font-size: 1.2rem;
 }
 .popup-btn#popup-yes {
-  background-color: #a1f1ff;
-  border: 2px solid #a1f1ff;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #4882ff;
 }
 .popup-btn#popup-no {
   margin-left: 1rem;
-  border: 2px solid #000;
+  color: #fff;
+  border: 2px solid #fff;
 }
