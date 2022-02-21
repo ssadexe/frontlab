@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="icon" href="img/icons/favicon.svg">
     <title>FrontLab</title>
 </head>
@@ -19,6 +20,18 @@
         <a href="#"><li class="sidebar-el">Menu element</li></a>
     </ul>
 </div>
+<style>
+    html {
+        overflow-y: hidden;
+        background-color: #e9ebf0;
+    }
+    .logo {
+        color: #000;
+    }
+    .main-space {
+        
+    }
+</style>
 <div class="main-space">
     <div class="nav">
     <div class="logo">
@@ -28,29 +41,18 @@
         <img src="img/icons/menu.svg" alt="">
     </div>
 </div>
-    <div class="promo section">
-        <p class="promo-info"><img src="img/icons/flash-1.svg" alt="">Студия web разработки</p>
-        <p class="promo-title">Разработка и <span class="bold">продвижение</span> вашего <span class="bold accent">сайта.</span></p>
-        <p class="promo-subtitle">Проектирование и разработка сайтов и web страниц.</p>
-        <div class="statistic">
-            <div class="st" id="projects">
-                <p class="st-title">13</p>
-                <p class="st-description">Проектов разработано и запущено</p>
-            </div>
-            <div class="st" id="clients">
-                <p class="st-title">40+</p>
-                <p class="st-description">Клиентов воспользовались нашими услугами</p>
-            </div>
-            <div class="st" id="team">
-                <p class="st-title">4</p>
-                <p class="st-description">Опытнах и амбициозных разработчика</p>
-            </div>
-            <div class="st" id="technologies">
-                <p class="st-title">15+</p>
-                <p class="st-description">Современных технологий разработки</p>
-            </div>
+    <div class="wrapper">
+        <div class="head">
+            <div class="slogan">Создадим сайт<br>твоей мечты</div>
+            <div class="head-description">Студия web разработки</div>
+            <img src="img/saly.png" alt="">
         </div>
-        <button class="get-started-btn" id="get-started-btn">Поехали<img src="img/icons/arrow-right-1.svg" id="right-arrow" alt=""></button>
+        <div class="bottom">
+            <p class="subslogan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius illo ut esse molestiae distinctio dignissimos, modi placeat quibusdam inventore asperiores sit eligendi reprehenderit laudantium fugiat est iure id. Quas, quia.</p>
+            <button class="start-btn">
+                Поехали
+            </button>
+        </div>
     </div>
 </div>
 <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
