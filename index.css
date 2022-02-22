@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
 .wrapper {
   display: grid;
-  grid-template-rows: 0.5fr 6fr 3.5fr;
+  grid-template-rows: 0.5fr 5fr 4.5fr;
   height: 100vh;
 }
 
@@ -28,7 +28,7 @@
 }
 
 img.cover-image {
-  margin-top: auto;
+  margin-top: 4rem;
   margin-bottom: 0;
   width: 400px;
 }
