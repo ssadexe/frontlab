@@ -9,10 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e9ebf0;
 }
 
 .cover__text-block {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .cover__text-block .main-title {
   text-align: center;
@@ -59,6 +60,87 @@ img.cover-image {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.wrapper#about_page {
+  background-color: #3a40e7;
+}
+.wrapper#about_page #navigation_bar {
+  background-color: #3a40e7;
+}
+.wrapper#about_page #navigation_bar #logo {
+  color: #fff;
+}
+
+.history {
+  margin-top: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #e9ebf0;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 2rem;
+}
+
+.member {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.member-head {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.avatar {
+  display: flex;
+  align-items: flex-end;
+}
+.avatar img {
+  width: 80px;
+  height: 80px;
+}
+
+.name-and-skill {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  padding-left: 1rem;
+}
+
+.member-name {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.member-skill {
+  font-size: 1rem;
+  color: #9e9e9e;
+}
+
+.member-description {
+  padding-top: 0.4rem;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image img {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.image .img-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #9e9e9e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -74,14 +156,35 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   border: none;
   font-family: "Montserrat";
+}
+
+.container {
+  padding: 1rem 1.5rem;
+}
+
+.block-title {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.text {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
 }
 #navigation_bar {
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 1rem 2rem;
+  background-color: #e9ebf0;
 }
 
 #logo {
@@ -110,6 +213,7 @@ button {
   transform: rotate(90deg);
   transition: 0.3s ease;
 }
+
 .sidebar {
   position: absolute;
   width: 70vw;
@@ -136,7 +240,7 @@ button {
 }
 
 .list-el {
-  padding: 0.2rem 0;
+  padding: 0.5rem 0;
   font-size: 1.2rem;
   color: #fff;
 }

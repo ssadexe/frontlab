@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>FrontLand - студия web разработки</title>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <p class="sidebar-title">Навигация по сайту</p>
+    <ul class="menu-list">
+        <a href="index.html"><li class="list-el" id="list-el">Главная страница</li></a>
+        <a href="about_page.html"><li class="list-el" id="list-el">О компании</li></a>
+        <a href="services.html"><li class="list-el" id="list-el">Наши услуги</li></a>
+        <a href="#"><li class="list-el" id="list-el">menu element</li></a>
+        <a href="#"><li class="list-el" id="list-el">menu element</li></a>
+    </ul>
+</div>
+<div class="wrapper" id="about_page">
+    <div id="navigation_bar">
+    <div id="logo">
+        FrontLab
+    </div>
+    <div id="sidebar-btn" onclick="openSidebar()">
+        <img src="img/icons/menu.svg" alt="sidebar button">
+    </div>
+</div>
+    <div class="container history">
+        <p class="block-title">Немного о нашей компании</p>
+        <p class="text">FrontLab берет своя начало из далекого 2016 года, когда web разработка только набирала обороты. Наш главный разработчик в то время только начинал изучать азы frontend'a. Медленно, но уверенно шагая к большой цели.</p>
+        <p class="text">Со временем появилась команда, которых объединяют общие интересы и цели. Каждый из нас знает свою роль в этом сложном механизме и делает все, чтобы он работал безотказно.</p>
+        <p class="block-title">Наша команда</p>
+        <div class="team block">
+           <div class="member" id="frontenddev">
+               <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-1.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Вячеслав Дёмин</p>
+                        <p class="member-skill">frontend разработчик</p>
+                    </div>
+               </div>
+               <div class="member-description">
+                    Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
+               </div>
+           </div>
+           <div class="member" id="javascriptdev">
+                <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-3.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Олег Дядечко</p>
+                        <p class="member-skill">JavaScript разработчик</p>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Занимается програмной составляющей веб страниц и сайтов. Работает с библиотеками и пакетами. Добавляет динамичность и фунционал на сайт.
+                </div>
+            </div>
+            <div class="member" id="webdesigner">
+                <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-4.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Алина Иванченко</p>
+                        <p class="member-skill">web дизайнер</p>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Занимается разработкой макетов веб страниц. От её работы зависят последующие этапы разработки. Макет должен соответсовать многим требованиям как заказчика, так и разработки в целом.
+                </div>
+            </div>
+            <div class="member" id="smm">
+                <div class="member-head">
+                    <div class="avatar">
+                        <img src="img/avatar-2.svg" alt="">
+                    </div>
+                    <div class="name-and-skill">
+                        <p class="member-name">Ксения Серова</p>
+                        <p class="member-skill">SMM менеджер</p>
+                    </div>
+                </div>
+                <div class="member-description">
+                Занимается прдвижением сайтов после их запуска в интернет. Анализирует входящий и исходящий трафик. Помогает наполнить сайт необходимым контентом, который сможет помочь сайту занять необходимое место  в глобальном поиске.
+                </div>
+            </div>
+        </div>
+        <div class="nowdays block">
+            <p class="block-title">Наша работа</p>
+            <p class="text">На данный момент <span class="bold">FrontLab</span> занимается созданием проектов любой сложности. От простых лендингов, до сложных многостраничных сайтов и веб приложений. Наша команда знает своё дело. Каждый заказчик принимает как ксовенное, так и прямое  участие в работе, и может следить за всеми этапами разработки на <span class="bold">GitHub</span>. Работая с нами вы получите не только готовый проект, но и много положительных эмоций.</p>
+            <div class="image">
+                <img src="img/github_example.png" alt="" id="github_example">
+                <p class="img-description">Система контроля версий "GitHub".</p>
+            </div>
+            <p class="text"><span class="bold">GitHub</span> — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.
+            <br><br>
+            Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им все возможности (включая SSL), а для крупных корпоративных проектов предлагаются различные платные тарифные планы.</p>
+            <p class="block-title">Средства разработки</p>
+            <p class="text">В своей работе мы используем самые современные и доступные технологии. Сфера web разработки развивается с огромной скоростью, поэтому мы стараемся не отставать.</p>
+    </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
