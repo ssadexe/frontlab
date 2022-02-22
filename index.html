@@ -5,59 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <link rel="icon" href="img/icons/favicon.svg">
-    <title>FrontLab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>Document</title>
 </head>
 <body>
 <div class="sidebar" id="sidebar">
-    <p class="sidebar-title">Навигация по сайту</p>
-    <ul class="sidebar-list">
-        <a href="index.html"><li class="sidebar-el">Главная</li></a>
-        <a href="about_page.html"><li class="sidebar-el">О компании</li></a>
-        <a href="#"><li class="sidebar-el">Menu element</li></a>
-        <a href="#"><li class="sidebar-el">Menu element</li></a>
-        <a href="#"><li class="sidebar-el">Menu element</li></a>
+    <p class="sidebar-title">some title</p>
+    <ul class="menu-list">
+        <a href="#"><li class="list-el">menu element</li></a>
+        <a href="#"><li class="list-el">menu element</li></a>
+        <a href="#"><li class="list-el">menu element</li></a>
+        <a href="#"><li class="list-el">menu element</li></a>
     </ul>
 </div>
-<style>
-    html {
-        overflow-y: hidden;
-        background-color: #e9ebf0;
-    }
-    .logo {
-        color: #000;
-    }
-    .main-space {
-        
-    }
-</style>
-<div class="main-space">
-    <div class="nav">
-    <div class="logo">
-        FrontLab.
+<div class="wrapper" id="wrapper">
+    <div id="navigation_bar">
+    <div id="logo">
+        FrontLab
     </div>
-    <div class="sidebar-btn" id="sidebar-btn" onclick="sidebar()">
-        <img src="img/icons/menu.svg" alt="">
+    <div id="sidebar-btn" onclick="openSidebar()">
+        <img src="img/icons/menu.svg" alt="sidebar button">
     </div>
 </div>
-    <div class="wrapper">
-        <div class="head">
-            <div class="slogan">Создадим сайт<br>твоей мечты</div>
-            <div class="head-description">Студия web разработки</div>
-            <img src="img/saly.png" alt="">
+    <div class="cover" id="cover">
+        <div class="cover__text-block">
+            <p class="main-title">Создадим сайт<br>твоей мечты</p>
+            <p class="main-subtitle">студия web разработки</p>
         </div>
-        <div class="bottom">
-            <p class="subslogan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius illo ut esse molestiae distinctio dignissimos, modi placeat quibusdam inventore asperiores sit eligendi reprehenderit laudantium fugiat est iure id. Quas, quia.</p>
-            <button class="start-btn">
-                Поехали
-            </button>
+        <img class="cover-image" src="img/saly.png" alt="">
+    </div>
+    <div class="bottom">
+        <div class="bottom-wrapper">
+            <p class="bottom-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta molestiae velit perferendis neque molestias, facere quos sunt ad, provident animi, et quo laborum veniam! Voluptatibus qui eveniet aut id?</p>
+            <div id="get-started-btn-wrapper">
+                <button id="get-started-btn">Далее</button>
+                <img src="img/icons/arrow-right-1.svg" alt="">
+            </div>
         </div>
     </div>
 </div>
-<script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/sidebar.js"></script>
 <script src="js/scroll.js"></script>
 </body>
 </html>
