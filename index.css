@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
-.wrapper {
-  display: grid;
-  grid-template-rows: 0.5fr 5fr 4.5fr;
-  height: 100vh;
-}
-
 .cover {
   display: flex;
   flex-direction: column;
@@ -36,7 +30,7 @@ img.cover-image {
 
 .bottom {
   display: flex;
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   background-color: #3a40e7;
   font-size: 1rem;
   color: #fff;
@@ -59,6 +53,7 @@ img.cover-image {
   border-radius: 0.6rem;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #000;
 }
 .wrapper#about_page {
   background-color: #3a40e7;
@@ -70,76 +65,67 @@ img.cover-image {
   color: #fff;
 }
 
-.history {
-  margin-top: 2rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #e9ebf0;
-}
-
 .team {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  grid-column-gap: 0px;
-  grid-row-gap: 2rem;
+  gap: 2rem;
 }
 
-.member {
-  display: grid;
-  grid-template-rows: auto auto;
-}
-
-.member-head {
+.team__developer {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.avatar {
+.developer__head {
   display: flex;
-  align-items: flex-end;
-}
-.avatar img {
-  width: 80px;
-  height: 80px;
+  flex-direction: row;
 }
 
-.name-and-skill {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
+#avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.head__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 1rem;
 }
 
-.member-name {
-  display: flex;
-  align-items: flex-end;
-  font-size: 1.4rem;
+.dev-name {
+  padding: 0.2rem 0;
+  font-size: 1.2rem;
   font-weight: 700;
+  color: #000;
 }
 
-.member-skill {
+.dev-skill {
+  padding: 0.2rem 0;
   font-size: 1rem;
   color: #9e9e9e;
 }
 
-.member-description {
-  padding-top: 0.4rem;
+.developer__description {
+  margin-top: 1rem;
 }
 
-.image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.image img {
-  width: 100%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 1rem;
-}
-.image .img-description {
-  text-align: center;
+.dev-description {
   font-size: 1rem;
-  color: #9e9e9e;
+  color: #000;
+}
+
+@media screen and (min-width: 767px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 * {
   margin: 0;
@@ -166,19 +152,43 @@ button {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem 1.5rem;
 }
 
+.block {
+  margin: 2rem 0;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  background-color: #e9ebf0;
+}
+
 .block-title {
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+.section {
+  padding: 1rem 0;
 }
 
 .text {
   padding: 0.5rem 0;
   font-size: 1rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+
+  .block {
+    max-width: 70vw;
+  }
 }
 #navigation_bar {
   display: grid;
@@ -202,7 +212,7 @@ button {
   border-radius: 0.7rem;
   background-color: #e9ebf0;
   transition: 0.3s ease;
-  box-shadow: 0px 0px 6px -63px rgba(0, 0, 0, 0.135), 0px 0px 16.7px -63px rgba(0, 0, 0, 0.192), 0px 0px 40.1px -63px rgba(0, 0, 0, 0.24), 0px 0px 133px -63px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02), 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05), 0px 0px 80px rgba(0, 0, 0, 0.07);
 }
 #sidebar-btn img {
   width: 30px;
@@ -212,6 +222,29 @@ button {
 .sidebar-btn-animation {
   transform: rotate(90deg);
   transition: 0.3s ease;
+}
+
+.sidebar-icon-transition {
+  -webkit-animation: sidebar-icon-transition 1s ease;
+          animation: sidebar-icon-transition 1s ease;
+}
+
+@-webkit-keyframes sidebar-icon-transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sidebar-icon-transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidebar {

@@ -27,84 +27,76 @@
         FrontLab
     </div>
     <div id="sidebar-btn" onclick="openSidebar()">
-        <img src="img/icons/menu.svg" alt="sidebar button">
+        <img src="img/icons/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
     </div>
 </div>
     <div class="container history">
-        <p class="block-title">Немного о нашей компании</p>
-        <p class="text">FrontLab берет своя начало из далекого 2016 года, когда web разработка только набирала обороты. Наш главный разработчик в то время только начинал изучать азы frontend'a. Медленно, но уверенно шагая к большой цели.</p>
-        <p class="text">Со временем появилась команда, которых объединяют общие интересы и цели. Каждый из нас знает свою роль в этом сложном механизме и делает все, чтобы он работал безотказно.</p>
-        <p class="block-title">Наша команда</p>
-        <div class="team block">
-           <div class="member" id="frontenddev">
-               <div class="member-head">
-                    <div class="avatar">
-                        <img src="img/avatar-1.svg" alt="">
+        <div class="block" id="about_company">
+            <p class="block-title">О нашей студии</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, at! Repellendus unde quasi, repudiandae iusto veniam consequuntur iure facere cum officia repellat, expedita laboriosam voluptatibus, quod ducimus officiis aspernatur animi.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti labore quae accusamus doloribus fugiat, eius aspernatur animi aut aperiam soluta itaque harum numquam quo ex minima distinctio. Dolores, perspiciatis.</p>
+        </div>
+        <div class="block">
+            <p class="block-title">Наша команда</p>
+            <div class="section team">
+                <div class="team__developer" id="frontend-dev">
+                    <div class="developer__head">
+                        <div class="head__avatar">
+                            <img src="img/avatar-1.svg" alt="" id="avatar">
+                        </div>
+                        <div class="head__name">
+                            <p class="dev-name">Вячеслав Дёмин</p>
+                            <p class="dev-skill">Frontend разработчик</p>
+                        </div>
                     </div>
-                    <div class="name-and-skill">
-                        <p class="member-name">Вячеслав Дёмин</p>
-                        <p class="member-skill">frontend разработчик</p>
-                    </div>
-               </div>
-               <div class="member-description">
-                    Занимается вёрсткой сайта и его компонентов по готовому макету. Создает формы, динамичные элементы страницы. Подключает и использует готовые библиотеки различной направленности.
-               </div>
-           </div>
-           <div class="member" id="javascriptdev">
-                <div class="member-head">
-                    <div class="avatar">
-                        <img src="img/avatar-3.svg" alt="">
-                    </div>
-                    <div class="name-and-skill">
-                        <p class="member-name">Олег Дядечко</p>
-                        <p class="member-skill">JavaScript разработчик</p>
+                    <div class="developer__description">
+                        <p class="dev-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel velit cumque, odio aspernatur cum odit ex totam, nesciunt exercitationem laboriosam, perferendis ipsam doloribus vitae? Nulla dicta quasi iste odit.</p>
                     </div>
                 </div>
-                <div class="member-description">
-                    Занимается програмной составляющей веб страниц и сайтов. Работает с библиотеками и пакетами. Добавляет динамичность и фунционал на сайт.
-                </div>
-            </div>
-            <div class="member" id="webdesigner">
-                <div class="member-head">
-                    <div class="avatar">
-                        <img src="img/avatar-4.svg" alt="">
+                <div class="team__developer" id="javascript-dev">
+                    <div class="developer__head">
+                        <div class="head__avatar">
+                            <img src="img/avatar-3.svg" alt="" id="avatar">
+                        </div>
+                        <div class="head__name">
+                            <p class="dev-name">Олег Дядечко</p>
+                            <p class="dev-skill">JavaScript разработчик</p>
+                        </div>
                     </div>
-                    <div class="name-and-skill">
-                        <p class="member-name">Алина Иванченко</p>
-                        <p class="member-skill">web дизайнер</p>
-                    </div>
-                </div>
-                <div class="member-description">
-                    Занимается разработкой макетов веб страниц. От её работы зависят последующие этапы разработки. Макет должен соответсовать многим требованиям как заказчика, так и разработки в целом.
-                </div>
-            </div>
-            <div class="member" id="smm">
-                <div class="member-head">
-                    <div class="avatar">
-                        <img src="img/avatar-2.svg" alt="">
-                    </div>
-                    <div class="name-and-skill">
-                        <p class="member-name">Ксения Серова</p>
-                        <p class="member-skill">SMM менеджер</p>
+                    <div class="developer__description">
+                        <p class="dev-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel velit cumque, odio aspernatur cum odit ex totam, nesciunt exercitationem laboriosam, perferendis ipsam doloribus vitae? Nulla dicta quasi iste odit.</p>
                     </div>
                 </div>
-                <div class="member-description">
-                Занимается прдвижением сайтов после их запуска в интернет. Анализирует входящий и исходящий трафик. Помогает наполнить сайт необходимым контентом, который сможет помочь сайту занять необходимое место  в глобальном поиске.
+                <div class="team__developer" id="dsigner-dev">
+                    <div class="developer__head">
+                        <div class="head__avatar">
+                            <img src="img/avatar-2.svg" alt="" id="avatar">
+                        </div>
+                        <div class="head__name">
+                            <p class="dev-name">Алина Иванченко</p>
+                            <p class="dev-skill">Web дизайнер</p>
+                        </div>
+                    </div>
+                    <div class="developer__description">
+                        <p class="dev-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel velit cumque, odio aspernatur cum odit ex totam, nesciunt exercitationem laboriosam, perferendis ipsam doloribus vitae? Nulla dicta quasi iste odit.</p>
+                    </div>
+                </div>
+                <div class="team__developer" id="smm-dev">
+                    <div class="developer__head">
+                        <div class="head__avatar">
+                            <img src="img/avatar-4.svg" alt="" id="avatar">
+                        </div>
+                        <div class="head__name">
+                            <p class="dev-name">Ирина Серова</p>
+                            <p class="dev-skill">SMM Менеджер</p>
+                        </div>
+                    </div>
+                    <div class="developer__description">
+                        <p class="dev-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel velit cumque, odio aspernatur cum odit ex totam, nesciunt exercitationem laboriosam, perferendis ipsam doloribus vitae? Nulla dicta quasi iste odit.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="nowdays block">
-            <p class="block-title">Наша работа</p>
-            <p class="text">На данный момент <span class="bold">FrontLab</span> занимается созданием проектов любой сложности. От простых лендингов, до сложных многостраничных сайтов и веб приложений. Наша команда знает своё дело. Каждый заказчик принимает как ксовенное, так и прямое  участие в работе, и может следить за всеми этапами разработки на <span class="bold">GitHub</span>. Работая с нами вы получите не только готовый проект, но и много положительных эмоций.</p>
-            <div class="image">
-                <img src="img/github_example.png" alt="" id="github_example">
-                <p class="img-description">Система контроля версий "GitHub".</p>
-            </div>
-            <p class="text"><span class="bold">GitHub</span> — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.
-            <br><br>
-            Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им все возможности (включая SSL), а для крупных корпоративных проектов предлагаются различные платные тарифные планы.</p>
-            <p class="block-title">Средства разработки</p>
-            <p class="text">В своей работе мы используем самые современные и доступные технологии. Сфера web разработки развивается с огромной скоростью, поэтому мы стараемся не отставать.</p>
     </div>
 </div>
 <script src="js/main.js"></script>
