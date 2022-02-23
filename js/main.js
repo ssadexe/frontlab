@@ -6,7 +6,6 @@ sidebarBtn.onclick = function openSidebar() {
     sidebar.classList.toggle('sidebar-opened')
     sidebarBtn.classList.toggle('sidebar-btn-animation')
     if (sidebar.classList.contains('sidebar-opened')) {
-        sidebarBtnIcon.classList.toggle('sidebar-icon-transition')
         sidebarBtnIcon.src = 'img/icons/cancel.svg'
     } else {
         sidebarBtnIcon.src = 'img/icons/menu.svg'
