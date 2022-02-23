@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+.wrapper#main-wrapper {
+  display: grid;
+  grid-template-rows: 0fr auto auto;
+  height: 100%;
+}
+
 .cover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
 }
 
 .cover__text-block {
@@ -116,6 +122,43 @@ img.cover-image {
   color: #000;
 }
 
+.instruments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.instruments__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fafafa;
+}
+
+.card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.card__name {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card__description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+
 @media screen and (min-width: 767px) {
   .team {
     grid-template-columns: repeat(2, 1fr);
@@ -127,6 +170,22 @@ img.cover-image {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
+
+  .instruments {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+.footer {
+  display: flex;
+  height: 200px;
+  background-color: #fafafa;
+}
+.footer p {
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
 }
 * {
   margin: 0;
@@ -135,8 +194,13 @@ img.cover-image {
 }
 
 html {
+  height: 100%;
   font-family: "Montserrat";
   font-size: 14px;
+}
+
+body {
+  height: 100%;
 }
 
 ul {
@@ -160,13 +224,13 @@ button {
 }
 
 .block {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 2rem 2rem;
   border-radius: 1rem;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
 }
 
-.block-title {
+.block__title {
   padding: 0 0 1rem 0;
   font-size: 1.6rem;
   font-weight: 700;
@@ -190,12 +254,16 @@ button {
   .block {
     max-width: 70vw;
   }
+
+  .section {
+    max-width: 70vw;
+  }
 }
 #navigation_bar {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 1rem 2rem;
-  background-color: #f7f7f7;
+  padding: 2rem 2rem;
+  background-color: #fafafa;
 }
 
 #logo {
@@ -211,7 +279,7 @@ button {
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.7rem;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   transition: 0.3s ease;
   box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02), 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05), 0px 0px 80px rgba(0, 0, 0, 0.07);
 }
