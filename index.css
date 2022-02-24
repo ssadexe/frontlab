@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
 }
 
 .cover__text-block {
@@ -134,7 +134,7 @@ img.cover-image {
   flex-direction: column;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
 }
 
 .card__head {
@@ -186,7 +186,7 @@ img.cover-image {
 .footer {
   display: flex;
   height: 200px;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
 }
 .footer p {
   margin: auto;
@@ -235,7 +235,7 @@ button {
   margin: 1rem 0;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
 }
 
 .block__title {
@@ -290,7 +290,7 @@ button {
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 1rem 2rem;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
 }
 
 #logo {
@@ -307,7 +307,7 @@ button {
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.7rem;
-  background-color: #d1d1d1;
+  background-color: #e2e2e2;
   transition: 0.3s ease;
   box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02), 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05), 0px 0px 80px rgba(0, 0, 0, 0.07);
 }
