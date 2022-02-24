@@ -4,6 +4,12 @@
   grid-template-rows: 0fr auto auto;
   height: 100%;
 }
+.wrapper#main-wrapper #navigation_bar {
+  grid-template-columns: 1fr auto;
+}
+.wrapper#main-wrapper #navigation_bar #back-btn {
+  display: none;
+}
 
 .cover {
   display: flex;
@@ -208,6 +214,7 @@ html {
 
 body {
   height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -222,6 +229,10 @@ a {
 button {
   border: none;
   font-family: "Montserrat";
+}
+
+span.bold {
+  font-weight: 700;
 }
 
 .container {
@@ -286,40 +297,6 @@ button {
     max-width: 70vw;
   }
 }
-#navigation_bar {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  padding: 1rem 2rem;
-  background-color: #ebebeb;
-}
-
-#logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #000;
-}
-
-#sidebar-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  border-radius: 0.7rem;
-  background-color: #ebebeb;
-  transition: 0.3s ease;
-  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02), 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05), 0px 0px 80px rgba(0, 0, 0, 0.07);
-}
-#sidebar-btn img {
-  width: 30px;
-  height: 30px;
-}
-
-.sidebar-btn-animation {
-  transform: rotate(90deg);
-  transition: 0.3s ease;
-}
 .wrapper#services_page {
   background-color: #ffffff;
 }
@@ -332,7 +309,7 @@ button {
 
 .instruments {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
   gap: 1rem;
 }
 
@@ -393,11 +370,21 @@ button {
   color: #fff;
 }
 
+#frameworks__block {
+  background-color: #0f0f0f;
+}
+#frameworks__block .block__title {
+  color: #fff;
+}
+
 .framework-list__element {
   display: flex;
   flex-direction: column;
   padding: 0.5rem 0;
   font-size: 1.2rem;
+  color: #70a6fd;
+}
+.framework-list__element a {
   color: #70a6fd;
 }
 
@@ -412,6 +399,54 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
+}
+#navigation_bar {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  padding: 1rem 2rem;
+  background-color: #ebebeb;
+}
+
+#back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+#back-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+#sidebar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+#sidebar-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar-btn-animation {
+  transform: rotate(90deg);
+  transition: 0.3s ease;
 }
 .sidebar {
   position: absolute;
