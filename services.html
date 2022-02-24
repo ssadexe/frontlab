@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>FrontLand - студия web разработки</title>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <p class="sidebar-title">Навигация по сайту</p>
+    <ul class="menu-list">
+        <a href="index.html"><li class="list-el" id="list-el">Главная страница</li></a>
+        <a href="about_page.html"><li class="list-el" id="list-el">О компании</li></a>
+        <a href="services.html"><li class="list-el" id="list-el">Наши услуги</li></a>
+        <a href="#"><li class="list-el" id="list-el">menu element</li></a>
+        <a href="#"><li class="list-el" id="list-el">menu element</li></a>
+    </ul>
+</div>
+<div class="wrapper" id="services_page">
+    <div id="navigation_bar">
+    <div id="logo">
+        FrontLab
+    </div>
+    <div id="sidebar-btn" onclick="openSidebar()">
+        <img src="img/icons/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
+    </div>
+</div>
+    <div class="container techologies">
+        <div class="block">
+            <p class="block__title">Технологии разработки</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, voluptas obcaecati culpa porro eveniet corporis necessitatibus non consequatur magnam repellendus accusamus. Soluta nihil odit repudiandae eos vel suscipit reiciendis obcaecati.</p>
+        </div>
+        <div class="section instruments">
+            <div class="instruments__tool-card" id="html-tool-card">
+                <div class="tool-card__head">
+                    <div class="tool-card__head__icon">
+                        <img src="img/icons/html.svg" alt="" id="tool-card-icon">
+                    </div>
+                    <p class="tool-card__head__name">HTML5</p>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum illo, dolorem quod fugiat quis distinctio facere unde numquam maxime!</p>    
+            </div>
+            <div class="instruments__tool-card" id="scss-tool-card">
+                <div class="tool-card__head">
+                    <div class="tool-card__head__icon">
+                        <img src="img/icons/scss.svg" alt="" id="tool-card-icon">
+                    </div>
+                    <p class="tool-card__head__name">SASS</p>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum illo, dolorem quod fugiat quis distinctio facere unde numquam maxime!</p>    
+            </div>
+            <div class="instruments__tool-card" id="js-tool-card">
+                <div class="tool-card__head">
+                    <div class="tool-card__head__icon">
+                        <img src="img/icons/js.svg" alt="" id="tool-card-icon">
+                    </div>
+                    <p class="tool-card__head__name">JavaScript</p>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum illo, dolorem quod fugiat quis distinctio facere unde numquam maxime!</p>    
+            </div>
+            <div class="instruments__tool-card" id="npm-tool-card">
+                <div class="tool-card__head">
+                    <div class="tool-card__head__icon">
+                        <img src="img/icons/php.svg" alt="" id="tool-card-icon">
+                    </div>
+                    <p class="tool-card__head__name">PHP</p>
+                </div>
+                <p class="tool-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum illo, dolorem quod fugiat quis distinctio facere unde numquam maxime!</p>    
+            </div>
+        </div>
+        <div class="block">
+            <p class="block__title">Адаптивный дизайн</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt, necessitatibus pariatur et fugit dicta molestiae ab nostrum natus dolore, consectetur at enim quod ad! Fugit eveniet ipsam asperiores illum.</p>
+            <div class="image"><img src="img/adaptive.jpg" alt=""></div>
+            <p class="image-description">Принцип работы адаптивной верстки.</p>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam tempora repudiandae quae fugiat modi maxime sunt commodi ab quia, id, esse eaque accusantium, qui atque provident aliquid molestiae eius. Earum?</p>
+        </div>
+        <div class="block">
+            <p class="block__title">Список использованных фреймворков</p>
+            <ul class="farmewrok-list">
+                <a href="https://scrollrevealjs.org/"> <li class="framework-list__element">Scrollreveal<span class="framework-list__element__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus sed veniam animi est nobis ea delectus commodi eum quaerat obcaecati explicabo, fuga facere beatae itaque suscipit. Nam, ex porro.</span></li></a>
+                <a href="https://animate.style/"> <li class="framework-list__element">Animate.css<span class="framework-list__element__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus sed veniam animi est nobis ea delectus commodi eum quaerat obcaecati explicabo, fuga facere beatae itaque suscipit. Nam, ex porro.</span></li></a>
+                <a href="#"> <li class="framework-list__element"></li></a>
+                <a href="#"> <li class="framework-list__element"></li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+<div class="footer">
+    <p>footer</p>
+</div>
+</body>
+</html>
