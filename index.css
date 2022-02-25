@@ -10,6 +10,9 @@
 .wrapper#main-wrapper #navigation_bar #back-btn {
   display: none;
 }
+.wrapper#main-wrapper #navigation_bar #logo {
+  padding-left: 0;
+}
 
 .cover {
   display: flex;
