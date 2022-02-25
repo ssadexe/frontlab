@@ -24,16 +24,27 @@
 <div class="wrapper" id="services_page">
     <div id="navigation_bar">
     <div id="back-btn" onclick="backPage()"">
-        <img src="img/icons/arrow-left.svg" alt="">
+        <img src="img/icons/UI/arrow-left.svg" alt="">
     </div>
     <div id="logo">
-        FrontLab
+        Front<span class="accent">Lab</span>
     </div>
     <div id="sidebar-btn" onclick="openSidebar()">
-        <img src="img/icons/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
+        <img src="img/icons/UI/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
     </div>
 </div>
-    <div class="container techologies">
+    <div class="tabs">
+        <a href="#section__instruments"><div class="tab">
+            <img src="img/icons/UI/setting.svg" alt=""><p class="tab__name">Инструменты</p>
+        </div></a>
+        <a href="#block__adaptive-design"><div class="tab">
+            <img src="img/icons/UI/mobile-programming.svg" alt=""><p class="tab__name">Адаптив</p>
+        </div></a>
+        <a href="#block__frameworks"><div class="tab">
+            <img src="img/icons/UI/setting-2.svg" alt=""><p class="tab__name">Фреймворки</p>
+        </div></a>
+    </div>
+    <div class="container techologies" id="container">
         <div class="block">
             <p class="block__title">Технологии разработки</p>
             <p class="text">На данный момент <span class="bold">FrontLab</span> занимается созданием проектов любой сложности. От простых лендингов, до сложных многостраничных сайтов и веб приложений. Наша команда знает своё дело. Каждый заказчик принимает как ксовенное, так и прямое  участие в работе, и может следить за всеми этапами разработки на <span class="bold">GitHub</span>. Работая с нами вы получите не только готовый проект, но и много положительных эмоций.</p>
@@ -41,7 +52,7 @@
             <br><br>
             Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им все возможности (включая SSL), а для крупных корпоративных проектов предлагаются различные платные тарифные планы.</p>
         </div>
-        <div class="section instruments">
+        <div class="section instruments" id="section__instruments">
             <div class="instruments__tool-card" id="html-tool-card">
                 <div class="tool-card__head">
                     <div class="tool-card__head__icon">
@@ -79,14 +90,14 @@
                 <p class="tool-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum illo, dolorem quod fugiat quis distinctio facere unde numquam maxime!</p>    
             </div>
         </div>
-        <div class="block">
+        <div class="block" id="block__adaptive-design">
             <p class="block__title">Адаптивный дизайн</p>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt, necessitatibus pariatur et fugit dicta molestiae ab nostrum natus dolore, consectetur at enim quod ad! Fugit eveniet ipsam asperiores illum.</p>
             <div class="image"><img src="img/adaptive.jpg" alt=""></div>
             <p class="image-description">Принцип работы адаптивной верстки.</p>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam tempora repudiandae quae fugiat modi maxime sunt commodi ab quia, id, esse eaque accusantium, qui atque provident aliquid molestiae eius. Earum?</p>
         </div>
-        <div class="block" id="frameworks__block">
+        <div class="block" id="block__frameworks">
             <p class="block__title">Список используемых фреймворков</p>
             <ul class="farmewrok-list">
                 <li class="framework-list__element"><a href="https://scrollrevealjs.org/">Scrollreveal</a><span class="framework-list__element__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus sed veniam animi est nobis ea delectus commodi eum quaerat obcaecati explicabo, fuga facere beatae itaque suscipit. Nam, ex porro.</span></li>

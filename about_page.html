@@ -24,22 +24,30 @@
 <div class="wrapper" id="about_page">
     <div id="navigation_bar">
     <div id="back-btn" onclick="backPage()"">
-        <img src="img/icons/arrow-left.svg" alt="">
+        <img src="img/icons/UI/arrow-left.svg" alt="">
     </div>
     <div id="logo">
-        FrontLab
+        Front<span class="accent">Lab</span>
     </div>
     <div id="sidebar-btn" onclick="openSidebar()">
-        <img src="img/icons/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
+        <img src="img/icons/UI/menu.svg" alt="sidebar button" id="sidebar-btn-icon">
     </div>
 </div>
-    <div class="container history">
-        <div class="block" id="about_company">
+    <div class="tabs">
+        <a href="#block__about-company"><div class="tab">
+            <img src="img/icons/UI/emoji-happy.svg" alt=""><p class="tab__name">О компании</p>
+        </div></a>
+        <a href="#block__team"><div class="tab">
+            <img src="img/icons/UI/people.svg" alt=""><p class="tab__name">Команда разработчиков</p>
+        </div></a>
+    </div>
+    <div class="container history" id="container">
+        <div class="block" id="block__about-company">
             <p class="block__title">О нашей студии</p>
             <p class="text">FrontLab берет своя начало из далекого 2016 года, когда web разработка только набирала обороты. Наш главный разработчик в то время только начинал изучать азы frontend'a. Медленно, но уверенно шагая к большой цели.</p>
             <p class="text">Со временем появилась команда, которых объединяют общие интересы и цели. Каждый из нас знает свою роль в этом сложном механизме и делает все, чтобы он работал безотказно.</p>
         </div>
-        <div class="block">
+        <div class="block" id="block__team">
             <p class="block__title">Наша команда</p>
             <div class="section team">
                 <div class="team__developer" id="frontend-dev">
