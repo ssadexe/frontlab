@@ -308,7 +308,6 @@ span.accent {
 
 .tabs {
   display: flex;
-  justify-content: space-around;
   overflow-x: auto;
   width: 100%;
   margin-top: 2rem;
