@@ -21,7 +21,7 @@ sidebarLink.onclick = function closeSidebar() {
     sidebar.classList.remove('sidebar-animation');
 }
 
-backBtn.onclick = function backPage() {
+sidebarLink.onclick = function backPage() {
     sidebar.classList.remove('sidebar-opened')
     history.back();
     sidebar.classList.remove('sidebar-opened')
