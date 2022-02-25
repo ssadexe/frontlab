@@ -3,6 +3,7 @@
   display: grid;
   grid-template-rows: 0fr auto auto;
   height: 100%;
+  background-color: #2c3246;
 }
 .wrapper#main-wrapper #navigation_bar {
   grid-template-columns: 1fr auto;
@@ -35,7 +36,7 @@
 }
 
 img.cover-image {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 0;
   margin-left: 2rem;
   width: 300px;
@@ -185,18 +186,22 @@ img.cover-image {
 .footer {
   display: flex;
   height: 200px;
-  background-color: #eef6fd;
+  background-color: #2c3246;
 }
 .footer p {
   margin: auto;
   font-size: 3rem;
   font-weight: 700;
-  color: #000;
+  color: #fff;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
 }
 
 html {
@@ -411,7 +416,7 @@ span.accent {
 }
 
 #frameworks__block {
-  background-color: #1b1f2c;
+  background-color: #2c3246;
 }
 #frameworks__block .block__title {
   color: #fff;
