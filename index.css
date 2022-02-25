@@ -72,35 +72,6 @@ img.cover-image {
   font-weight: 600;
   color: #fff;
 }
-.tabs {
-  display: flex;
-  overflow-x: auto;
-  width: 100%;
-  margin-top: 2rem;
-  padding: 0 2rem 1rem 2rem;
-}
-
-.tab {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 1rem;
-  margin-right: 2rem;
-  border-radius: 1rem;
-  background-color: #ffffff;
-}
-.tab img {
-  width: 25px;
-  height: 25px;
-}
-
-.tab__name {
-  white-space: nowrap;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  color: #000;
-}
-
 .team {
   display: grid;
   grid-template-rows: repeat(4, auto);

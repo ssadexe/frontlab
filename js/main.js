@@ -2,6 +2,7 @@ let sidebarBtn = document.getElementById('sidebar-btn');
 let sidebar = document.getElementById('sidebar');
 let sidebarBtnIcon = document.getElementById('sidebar-btn-icon');
 let backBtn = document.getElementById('back-btn');
+let sidebarLink = document.getElementById('list-el')
 
 sidebarBtn.onclick = function openSidebar() {
     sidebar.classList.toggle('sidebar-opened');
@@ -14,6 +15,10 @@ sidebarBtn.onclick = function openSidebar() {
         sidebarBtnIcon.src = 'img/icons/UI/menu.svg';
         document.body.style.position = 'relative';
     }
+}
+
+sidebarLink.onclick = function closeSidebar() {
+    sidebar.classList.remove('sidebar-animation');
 }
 
 backBtn.onclick = function backPage() {
