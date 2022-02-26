@@ -22,7 +22,6 @@ sidebarLink.onclick = function closeSidebar() {
 }
 
 sidebarLink.onclick = function backPage() {
-    sidebar.classList.remove('sidebar-opened')
     history.back();
     sidebar.classList.remove('sidebar-opened')
 }
